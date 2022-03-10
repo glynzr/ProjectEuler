@@ -1,0 +1,18 @@
+# Even Fibbonaci Numbers
+li=[1,2]
+n=int(input("n="))
+while (li[-1]+li[-2])<n:
+    li+=[li[-1]+li[-2]]
+    if len(li)==n:
+        break
+print(li)
+
+x=1
+total=0
+while x<len(li):
+    total+=li[x]
+    x+=2
+print(total)
+
+    
+

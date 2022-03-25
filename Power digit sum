@@ -1,0 +1,18 @@
+#Power digit sum
+#1st method
+n=int(input("Enter the power: "))
+x=2**n
+su=0
+for i in str(x):
+    su+=int(i)
+print(su)
+
+#2nd method
+n=int(input("Enter the power: "))
+x=2**n
+su=0
+while x>0:
+    su+=(x%10)
+    x//=10
+print(su)
+

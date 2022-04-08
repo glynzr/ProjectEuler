@@ -1,0 +1,14 @@
+#Amicable Numbers
+def Properdivisors(N):
+    su=0
+    for x in range(1,N):
+        if N%x==0:
+            su+=x
+    return su
+total=0
+for i in range(1,10000):
+    if i==Properdivisors(Properdivisors(i)) and i!=Properdivisors(i):
+        total+=i
+print(total)
+
+
